@@ -1,0 +1,32 @@
+GET http://localhost:3000/players
+
+###
+
+GET http://localhost:3000/players/3
+
+###
+
+POST http://localhost:3000/players
+Content-Type: application/json
+
+{
+    "id": 5,
+    "name": "Markus Karlsson",
+    "age": 27,
+    "position": "Goalkeeper",
+    "team": "Kållereds SK",
+}
+
+###
+
+PUT http://localhost:3000/players/1
+Content-Type: application/json
+
+{
+    "team": "Retired"
+}
+
+###
+
+DELETE http://localhost:3000/players/7
+Content-Type: application/json
