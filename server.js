@@ -59,8 +59,6 @@ app.get('/players/:playerId', (req, res) => {
     }
 })
 
-// app.use(express.json())
-
 // POST Add a player
 app.post('/players', (req, res) => {
     const player = {
@@ -77,15 +75,6 @@ app.post('/players', (req, res) => {
         players.push(req.body).json
         res.status(201).send(player)
     }
-    
-    // if(!req.body.name || !req.body.age || !req.body.position || !req.body.team)
-    //     return res.status(400).send('Name, age, position and team is required.')
-
-
-    // players.push(player)
-    // res.status(201).json(null)
-    // players.push(req.body).json
-    // res.status(201).json(null)
 })
 
 // PUT Update a specific player
