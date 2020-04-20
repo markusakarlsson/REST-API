@@ -42,7 +42,7 @@ app.get('/players', (req, res) => {
     res.json(players)
 })
 
-// GET  a specific player by ID
+// GET a specific player by ID
 app.get('/players/:playerId', (req, res) => {
     const specificPlayer = players.find((player) => {
         if(player.id.toString() === req.params.playerId) {
@@ -59,7 +59,7 @@ app.get('/players/:playerId', (req, res) => {
     }
 })
 
-// POST Add a player
+// POST add a player
 app.post('/players', (req, res) => {
     const player = {
         id: req.body.id,
@@ -77,7 +77,7 @@ app.post('/players', (req, res) => {
     }
 })
 
-// PUT Update a specific player
+// PUT update a specific player
 app.put('/players/:playerId', (req, res) => {
     const specificPlayer = players.find((player) => {
         if(player.id.toString() === req.params.playerId) {
