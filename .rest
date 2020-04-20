@@ -14,7 +14,7 @@ Content-Type: application/json
     "name": "Markus Karlsson",
     "age": 27,
     "position": "Goalkeeper",
-    "team": "Kållereds SK",
+    "team": "Kållereds SK"
 }
 
 ###
@@ -22,11 +22,14 @@ Content-Type: application/json
 PUT http://localhost:3000/players/1
 Content-Type: application/json
 
-{
+{   
+    "name": "Daniel Alfredsson",
+    "age": "47",
+    "position": "Forward",
     "team": "Retired"
 }
 
 ###
 
-DELETE http://localhost:3000/players/7
+DELETE http://localhost:3000/players/4
 Content-Type: application/json
